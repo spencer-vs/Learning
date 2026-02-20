@@ -8,6 +8,7 @@ import {
   Link,
   useNavigate
 } from "react-router-dom";
+import styles from "./Login.module.css"
 
 const Login = () => {
   const navigate = useNavigate();
@@ -50,15 +51,17 @@ const Login = () => {
   
   
   return (
-    <div>
-     <h2>Login</h2>
-
-     <form onSubmit={handleSubmit}>
+    
+    <div >
+     
+    <div className={styles.loginCon}> 
+     <form onSubmit={handleSubmit} className={styles.form}>
        <input 
        type="text"
        placeholder='Username'
        value={username}
        onChange={(e) => setUsername(e.target.value)}
+       className={styles.nameForm}
        />
 
 
@@ -71,6 +74,7 @@ const Login = () => {
 
        <button type='submit'>Login</button>
      </form>
+     </div>
     </div>
   )
 }
