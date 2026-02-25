@@ -19,12 +19,16 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
      e.preventDefault();
+     console.log('Login form submitted with username:', username, 'password length:', password.length);
      const success = await login(username, password);
+     console.log('Login result:', success);
      if (success) {
       navigate("/dashboard");
       console.log("success")
      } else {
-      console.log("Fail")
+      console.log(
+       alert("Invalid Credentials")
+      )
      } //Uni1234sim
   }
 

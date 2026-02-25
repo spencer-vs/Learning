@@ -6,7 +6,9 @@ import { Navigate,
   Routes,
   Route,
   Link,
+  NavLink,
 useNavigate } from 'react-router-dom';
+import styles from './Dashboard.module.css';
 
 const Dashboard = () => {
   
@@ -34,6 +36,7 @@ const Dashboard = () => {
 
       {user && <p>Welcome, {user.username}!</p>}
       <button onClick={handleLogout}>Logout</button>
+      <NavLink to="/animations" className={styles.navLink}>Animations</NavLink>
     </div>
   )
 }
