@@ -37,6 +37,8 @@ const Dashboard = () => {
       {user && <p>Welcome, {user.username}!</p>}
       <button onClick={handleLogout}>Logout</button>
       <NavLink to="/animations" className={styles.navLink}>Animations</NavLink>
+      <NavLink to="/intro" className={styles.navLink}>Intro</NavLink>
+    
     </div>
   )
 }

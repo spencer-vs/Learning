@@ -6,6 +6,7 @@ import Animations from './componets/Animations'
 import Home from "./componets/Home"
 import SignUp from './componets/SignUp'
 import SignIn from './componets/SignIn'
+import Intro from './componets/Intro'
 import {
   BrowserRouter, 
   Routes,
@@ -31,6 +32,7 @@ function App() {
         <Route path="/animations" element={<Animations />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/intro" element={<Intro />} />
         </Routes>
         
         </BrowserRouter>

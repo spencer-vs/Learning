@@ -39,7 +39,7 @@ const Animations = () => {
 
 
 
-     <div className={styles.user}>
+      <div className={styles.user}>
       <div className={styles.userCard}>
        
        <div className={`${styles.user_face} ${styles.user_signup}`}>
@@ -57,7 +57,7 @@ const Animations = () => {
         
     
       </div>
-      </div>
+      </div>  
 
 
     </div>
