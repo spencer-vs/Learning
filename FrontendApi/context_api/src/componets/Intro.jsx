@@ -34,7 +34,9 @@ const Intro = () => {
 //   ></div>
 // </div>
   
-  
+//   <div className={styles.welcome}>
+//           Hi Isaac, welcome back, what are we doing today.
+//        </div>
     return (
     <div className={`${styles.intro_con} `} style={{ backgroundImage: `url(${backgrounds[index]})`}}>
 
@@ -44,9 +46,7 @@ const Intro = () => {
 
         
         
-       <div className={styles.welcome}>
-          Hi Isaac, welcome back, what are we doing today.
-       </div>
+       
     <div className={styles.cards_row}>
     <div className={styles.card1}>
         <p className={styles.text_1}>Create, update, share and delete notes with ease</p>
@@ -70,16 +70,18 @@ const Intro = () => {
             Lecture Notes
         </button>
     </div> 
-       
-    
-    </div>
 
     <div className={styles.card4}>
-        <p className={styles.text_1}>Turn tutorial videos into lecture notes for easy reading</p>
+        <p className={styles.text_1}>Turn tutorial videos into lecture notes.</p>
         <button className={styles.intro_btn}>
             Tutorials
         </button>
     </div>
+       
+    
+    </div>
+
+    
 
 
   
